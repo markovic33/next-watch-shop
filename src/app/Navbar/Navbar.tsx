@@ -4,7 +4,7 @@ import Link from "next/link";
 import ShoppingCartButton from "./ShoppingCartButton";
 import { getCart } from "@/lib/cart";
 import UserButton from "./UserButton";
-import { authOptions } from "../api/auth/[...nextauth]/route";
+import authOptions from "../api/auth/[...nextauth]/options";
 import { getServerSession } from "next-auth";
 
 export default async function Navbar() {
